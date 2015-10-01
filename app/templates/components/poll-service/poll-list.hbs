@@ -1,0 +1,5 @@
+<ul>
+  {{#each polls as |poll|}}
+    {{poll-service/poll-item poll=poll edit="editPoll" publish="publishPoll" delete="deletePoll"}}
+  {{/each}}
+</ul>
