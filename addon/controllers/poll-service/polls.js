@@ -5,7 +5,7 @@ export default BaseController.extend({
   polls: Ember.computed.reads('model.polls'),
   actions: {
     editPoll(poll) {
-      this.client().transitionToRoute('poll.edit', poll.id);
+      this.client().transitionToRoute('poll.edit', poll);
     },
     publishPoll(poll) {
       console.log('controller:polls:publish-poll ' + poll);
